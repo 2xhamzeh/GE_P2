@@ -69,6 +69,7 @@ public class BombInteraction : MonoBehaviour
 
     public void SlowOnBombPickup()
     {
+        SoundManager.instance.PlaySFX(SoundManager.instance.bumpInto);
         player.Modifier.ModifyMoveSpeed(0.5f, 0.5f);
     }
 

@@ -36,7 +36,7 @@ public class ItemRocket : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!isActive) return;
-
+        SoundManager.instance.PlaySFX(SoundManager.instance.rocket);
         Player hitPlayer = collision.GetComponent<Player>();
         if (hitPlayer != null && hitPlayer == targetPlayer)
         {

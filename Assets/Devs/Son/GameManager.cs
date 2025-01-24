@@ -124,6 +124,7 @@ public class GameManager : MonoBehaviour, IGameContext
         // Trigger respective animations
         winner.Controller.TriggerWinAnimation();
         loser.Controller.TriggerExplosionAnimation();
+        SoundManager.instance.PlaySFX(SoundManager.instance.explode);
 
         yield return new WaitForSeconds(endRoundDelay);
 
@@ -177,6 +178,12 @@ public class GameManager : MonoBehaviour, IGameContext
             {
                 yield return new WaitForSeconds(1f);
                 CurrentTime--;
+
+                // Play ticking sound when there are 10 seconds left
+                if (CurrentTime <= 10 && CurrentTime > 0)
+                {
+                    SoundManager.instance.PlaySFX(SoundManager.instance.tick);
+                }
 
                 if (CurrentTime <= 0)
                 {

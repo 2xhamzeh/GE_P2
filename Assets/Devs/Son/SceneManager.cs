@@ -27,6 +27,7 @@ public class MySceneManager : MonoBehaviour
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
+        SoundManager.instance.PlayBackgroundMusic(0);
     }
 
     // Load Map 1 scene
@@ -34,6 +35,7 @@ public class MySceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         lastMap = 1;
+        SoundManager.instance.PlayBackgroundMusic(1);
     }
 
     // Load Map 2 scene
@@ -41,12 +43,14 @@ public class MySceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(2);
         lastMap = 2;
+        SoundManager.instance.PlayBackgroundMusic(2);
     }
 
     public void LoadMap3()
     {
         SceneManager.LoadScene(3);
         lastMap = 3;
+        SoundManager.instance.PlayBackgroundMusic(3);
     }
     public void LoadPreviousMap()
     {
@@ -57,6 +61,7 @@ public class MySceneManager : MonoBehaviour
     public void LoadMapSelect()
     {
         SceneManager.LoadScene(4);
+        SoundManager.instance.PlayBackgroundMusic(4);
     }
 
 
@@ -64,6 +69,7 @@ public class MySceneManager : MonoBehaviour
     public void LoadEndScreen()
     {
         SceneManager.LoadScene(5);
+        SoundManager.instance.PlayBackgroundMusic(5);
     }
 
     // Load the Settings scene

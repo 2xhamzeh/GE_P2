@@ -12,6 +12,7 @@ public class ItemTrapSpawner : BaseItem
 
     protected override void ApplyEffect(Player player)
     {
+        SoundManager.instance.PlaySFX(SoundManager.instance.trap_spawn);
         itemManager.SpawnTrapAfterDelay(trapPrefab, transform.position, 0.8f, spawnPoint);
     }
 }

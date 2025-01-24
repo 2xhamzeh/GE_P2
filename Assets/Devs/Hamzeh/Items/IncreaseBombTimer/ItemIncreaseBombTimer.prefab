@@ -9,6 +9,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5076147268543371189, guid: 742129e219378944e8d41b24a368db9f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076147268543371189, guid: 742129e219378944e8d41b24a368db9f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076147268543371189, guid: 742129e219378944e8d41b24a368db9f, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3092223754324887936, guid: f3ca26c1e1abae34da96aa2032577d37, type: 3}
@@ -67,6 +75,14 @@ PrefabInstance:
     - target: {fileID: 6133796624182506459, guid: 742129e219378944e8d41b24a368db9f, type: 3}
       propertyPath: m_Name
       value: ItemIncreaseBombTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238130738911019083, guid: 742129e219378944e8d41b24a368db9f, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238130738911019083, guid: 742129e219378944e8d41b24a368db9f, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 7238130738911019083, guid: 742129e219378944e8d41b24a368db9f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

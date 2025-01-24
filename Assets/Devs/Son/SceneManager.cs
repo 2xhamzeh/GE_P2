@@ -72,9 +72,16 @@ public class MySceneManager : MonoBehaviour
         SoundManager.instance.PlayBackgroundMusic(5);
     }
 
+    // Load the Settings scene
     public void LoadSettingsScreen()
     {
         SceneManager.LoadScene(6);
+    }
+
+    // Load the Rules scene
+    public void LoadRulesScreen()
+    {
+        SceneManager.LoadScene(7);
     }
 
     // Quit the game
